@@ -1,0 +1,183 @@
+
+/* ~ ~ ~ NAV CSS ~ ~ ~ */
+nav{
+    position: fixed;
+    background-color: #3a3a3a;
+    width: 40px;
+    height: 100vh;
+    transition: .5s;
+}
+
+nav .titulo {
+    color: white;
+    margin-top: 10px;
+    border-bottom: 1px solid grey;
+}
+
+nav .titulo a {
+    position: fixed;
+    display: none;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+nav .cadastros label{
+    font-size: 20px;
+    position: absolute;
+    display: none;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+nav .vendas label{
+    position: absolute;
+    display: none;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+nav i{
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.seta-baixo { 
+    display: inline-block;
+    position: absolute;
+}
+/* ~ ~ ~ CLASSE CADASTROS CSS ~ ~ ~ */
+.cadastros{
+    list-style: none;
+    margin-top: 25px; 
+    color: white;
+}
+
+.cadastros a {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+/* ~ ~ ~ CLASSE VENDAS CSS ~ ~ ~ */
+
+.vendas{
+    list-style: none;
+    margin-top: 25px; 
+    color: white;
+}
+
+.vendas a {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+/* ~ ~ ~ CLASSE SUBITENS CSS ~ ~ ~ */
+
+.subitem-cadastros{
+    display: none;
+}
+
+.subitem-cadastros li{
+    padding: 20px;
+    border-bottom: 1px solid grey;  
+    cursor: pointer;
+}
+
+.subitem-cadastros li a{
+    font-size: 16px;
+    
+}
+
+.subitem-cadastros li:first-child{
+    border-top: 1px solid grey;  
+    margin-top: 10px;
+}
+
+.subitem-cadastros li{
+    border-bottom: 1px solid grey;  
+}
+
+.subitem-vendas{
+    display: none;
+}
+
+.subitem-vendas li{
+    padding: 20px;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+}
+
+.subitem-vendas li:first-child{
+    border-top: 1px solid grey;  
+    margin-top: 10px;
+}
+
+.subitem-vendas li a{
+    font-size: 16px;
+}
+
+
+/* ~ ~ ~ CSS EM TAGS: HOVER ~ ~ ~ */
+nav:hover {
+    width: 280px;
+}
+
+nav:hover .titulo a{
+    display: inline-block;
+}
+
+nav:hover .cadastros label{
+    display: inline-block;
+}
+
+nav:hover .vendas label{
+    display: inline-block;
+}
+
+nav:hover .cadastro-link{
+    display: block;
+}
+
+nav:hover .venda-link{
+    display: block;
+}
+
+.subitem-cadastros li:hover{
+    background-color: #242424;
+    transition: 1s;
+}
+
+.vendas li:hover{
+    background-color: #242424;
+    transition: 1s;
+}
+
+nav label:hover{
+    color: grey ;
+    transition: .5s;
+}
+
+
+/* ~ ~ ~ MENU OPEN/CLOSE CSS ~ ~ ~ */
+
+
+#vendas{
+    display: none;
+}
+
+#cadastros:checked ~ ul{
+    display: block;
+}
+
+#cadastros{
+    display: none;
+}
+
+#vendas:checked ~ ul {
+    display: block;
+}
+
+
+
+
+
