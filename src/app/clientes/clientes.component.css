@@ -1,0 +1,92 @@
+*{
+    margin-left: 50px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.botao-cadastro i{
+    margin:0
+}
+
+.tabela-clientes{
+    width: 95%;
+    background-color: #ececec;
+    box-shadow: 1px 1px 3px 2px #808080;
+}
+.tabela-clientes th{
+    background-color: #2ecc71;
+    color: #ecf0f1;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 50px;
+    border-bottom: 2px solid black;
+}
+
+
+.tabela-clientes td{
+    color: #2c3e50;
+    font-size: 15px;
+    text-align: center;
+    padding: 15px;
+}
+
+button{
+    border: none;
+    color: white;
+    background-color: #2ecc71;
+    padding: 10px;
+    width: 120px;
+    margin-top: 40px;
+    margin-bottom: 10px ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dados-tabela {
+    text-align: center;
+}
+
+.dados-tabela button{
+    margin: 0;
+    margin-left: 10px;
+    text-align: center;
+}
+
+
+.dados-tabela button:first-child{
+    background-color: #f39c12;
+}
+
+.dados-tabela button:last-child{
+    background-color: #e74c3c;
+}
+
+.dados-tabela i:first-child{
+  margin: 0;
+}
+
+
+input{
+    padding: 8px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #27ae60;
+    transition: .5s;
+}
+
+.dados-tabela button:first-child:hover{
+    background-color: #d35400;
+    transition: .5s;
+}
+
+.dados-tabela button:last-child:hover{
+    background-color: #c0392b;
+    transition: .5s;
+}

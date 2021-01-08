@@ -1,0 +1,18 @@
+<div class="cadastro-content">
+<h1>Cadastro de clientes</h1>
+
+    <div class="info-cadastro-content"> 
+        <input id="input-nome" type="text" placeholder="Nome" [(ngModel)]="cliente.nome">
+
+        <input id="input-email" type="text" placeholder="Email" [(ngModel)]="cliente.email">
+
+        <input id="input-id" type="text" placeholder="Id" [(ngModel)]="cliente.id">
+
+        <input id="input-apelido" type="text" placeholder="Apelido" [(ngModel)]="cliente.apelido">
+
+        <input id="input-cpf" placeholder="CPF" type="text" [(ngModel)]="cliente.cpf">
+   </div>
+
+<button class="button-cadastro" (click)="cadastrarCliente()">Cadastrar</button>
+<button class="button-voltar" (click)="voltarParaClientes()">Voltar</button>
+</div>

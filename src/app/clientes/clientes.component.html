@@ -1,0 +1,33 @@
+<button class="botao-cadastro"
+(click)="navegarParaCadastro()">
+    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+    Cadastrar
+</button>
+<input type="text" placeholder="Pesquisar">
+
+<table class="tabela-clientes">
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Apelido</th>
+            <th>Cpf</th>
+            <th>Ações</th>
+        </tr>
+        <tr class="dados-tabela" *ngFor="let pessoa of cliente">
+            <td>{{ pessoa.id }}</td>
+            <td>{{ pessoa.nome }}</td>
+            <td>{{ pessoa.email }}</td>
+            <td>{{ pessoa.apelido }}</td>
+            <td>{{ pessoa.cpf }}</td>
+            <td><button routerLink="/editar-cliente/{{pessoa.id}}">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                Editar
+                </button>
+                <button (click)="excluirCliente(pessoa.id)">
+                <i class="fa fa-times" aria-hidden="true"></i>
+                Excluir
+                </button>
+            </td>
+        </tr>
+</table>

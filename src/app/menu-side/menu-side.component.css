@@ -2,16 +2,24 @@
 /* ~ ~ ~ NAV CSS ~ ~ ~ */
 nav{
     position: fixed;
-    background-color: #3a3a3a;
+    background-color: #1abc9c;
     width: 40px;
     height: 100vh;
     transition: .5s;
+    z-index: 1;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
 }
 
 nav .titulo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #16a085;
     color: white;
-    margin-top: 10px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid white;
 }
 
 nav .titulo a {
@@ -42,10 +50,6 @@ nav i{
     margin-left: 10px;
 }
 
-.seta-baixo { 
-    display: inline-block;
-    position: absolute;
-}
 /* ~ ~ ~ CLASSE CADASTROS CSS ~ ~ ~ */
 .cadastros{
     list-style: none;
@@ -53,10 +57,6 @@ nav i{
     color: white;
 }
 
-.cadastros a {
-    margin-left: 10px;
-    font-size: 20px;
-}
 
 /* ~ ~ ~ CLASSE VENDAS CSS ~ ~ ~ */
 
@@ -79,7 +79,7 @@ nav i{
 
 .subitem-cadastros li{
     padding: 20px;
-    border-bottom: 1px solid grey;  
+    border-bottom: 1px solid white;  
     cursor: pointer;
 }
 
@@ -89,12 +89,12 @@ nav i{
 }
 
 .subitem-cadastros li:first-child{
-    border-top: 1px solid grey;  
+    border-top: 1px solid white;  
     margin-top: 10px;
 }
 
 .subitem-cadastros li{
-    border-bottom: 1px solid grey;  
+    border-bottom: 1px solid white;  
 }
 
 .subitem-vendas{
@@ -102,13 +102,14 @@ nav i{
 }
 
 .subitem-vendas li{
+    z-index: 1;
     padding: 20px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid white;
     cursor: pointer;
 }
 
 .subitem-vendas li:first-child{
-    border-top: 1px solid grey;  
+    border-top: 1px solid white;  
     margin-top: 10px;
 }
 
@@ -124,6 +125,7 @@ nav:hover {
 
 nav:hover .titulo a{
     display: inline-block;
+    transition: 1s;
 }
 
 nav:hover .cadastros label{
@@ -143,37 +145,30 @@ nav:hover .venda-link{
 }
 
 .subitem-cadastros li:hover{
-    background-color: #242424;
+    background-color: #16a085;
     transition: 1s;
 }
 
 .vendas li:hover{
-    background-color: #242424;
+    background-color: #16a085;
     transition: 1s;
 }
 
 nav label:hover{
-    color: grey ;
+    color: #95a5a6 ;
     transition: .5s;
+
 }
+
 
 
 /* ~ ~ ~ MENU OPEN/CLOSE CSS ~ ~ ~ */
 
-
-#vendas{
-    display: none;
+.cadastros:hover .subitem-cadastros{
+    display:block
 }
 
-#cadastros:checked ~ ul{
-    display: block;
-}
-
-#cadastros{
-    display: none;
-}
-
-#vendas:checked ~ ul {
+.vendas:hover .subitem-vendas{
     display: block;
 }
 

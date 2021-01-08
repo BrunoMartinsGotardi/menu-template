@@ -1,0 +1,44 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "Bruno Martins Gotardi",
+      "email": "bruno@email.com",
+      "apelido": "Bruno",
+      "cpf": "25478566325",
+      "anoNascimento:": "1997"
+    },
+    {
+      "id": 2,
+      "nome": "Everton da Silva Gotardi",
+      "email": "everton@email.com",
+      "apelido": "Everton",
+      "cpf": "24235688942",
+      "anoNascimento:": "1962"
+    },
+    {
+      "id": 3,
+      "nome": "Regiani Martins Gotardi",
+      "email": "regiani@email.com",
+      "apelido": "Regiani",
+      "cpf": "52168944523",
+      "anoNascimento:": "1970"
+    },
+    {
+      "id": "4",
+      "nome": "Maria da Silva",
+      "email": "maria@email.com",
+      "apelido": "Maria",
+      "cpf": "12589766532",
+      "anoNascimento": ""
+    },
+    {
+      "id": "5",
+      "nome": "Adilson Batista Filho",
+      "email": "adilson@email.com",
+      "apelido": "Adilson",
+      "cpf": "26574899325",
+      "anoNascimento": ""
+    }
+  ]
+}
