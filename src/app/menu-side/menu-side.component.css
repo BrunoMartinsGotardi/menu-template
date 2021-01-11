@@ -32,14 +32,16 @@ nav .titulo a {
 nav .cadastros label{
     font-size: 20px;
     position: absolute;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
     margin-left: 15px;
     cursor: pointer;
 }
 
 nav .vendas label{
     position: absolute;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
     margin-left: 15px;
     cursor: pointer;
     font-size: 20px;
@@ -71,10 +73,10 @@ nav i{
     font-size: 20px;
 }
 
-/* ~ ~ ~ CLASSE SUBITENS CSS ~ ~ ~ */
+/* ~ ~ ~ CLASSE SUBITENS-CADASTROS CSS ~ ~ ~ */
 
 .subitem-cadastros{
-    display: none;
+  display: none;
 }
 
 .subitem-cadastros li{
@@ -96,6 +98,8 @@ nav i{
 .subitem-cadastros li{
     border-bottom: 1px solid white;  
 }
+
+/* ~ ~ ~ CLASSE SUBITENS-VENDAS CSS ~ ~ ~ */
 
 .subitem-vendas{
     display: none;
@@ -123,17 +127,29 @@ nav:hover {
     width: 280px;
 }
 
+nav:hover .subMenu-open{
+    display: block;
+}
+
+nav:hover .subMenu-close{
+    display: block;
+}
+
 nav:hover .titulo a{
     display: inline-block;
     transition: 1s;
 }
 
 nav:hover .cadastros label{
-    display: inline-block;
+    opacity: 1;
+    transition: .5s;
+    pointer-events: all;
 }
 
 nav:hover .vendas label{
-    display: inline-block;
+    opacity: 1;
+    transition: .5s;
+    pointer-events: all;
 }
 
 nav:hover .cadastro-link{
@@ -142,6 +158,11 @@ nav:hover .cadastro-link{
 
 nav:hover .venda-link{
     display: block;
+}
+
+
+nav:hover .subitem-cadastros{
+    display: visible;
 }
 
 .subitem-cadastros li:hover{
@@ -160,18 +181,55 @@ nav label:hover{
 
 }
 
-
-
 /* ~ ~ ~ MENU OPEN/CLOSE CSS ~ ~ ~ */
 
-.cadastros:hover .subitem-cadastros{
-    display:block
+.subMenu-close{
+    overflow:hidden;
+    max-height: 0px;
+    transition: max-height 1s ease-in-out;
 }
 
-.vendas:hover .subitem-vendas{
-    display: block;
+.cadastros .label-cadastro i{
+    display: none;
 }
 
+.vendas .label-vendas i{
+    display: none;
+}
+
+/* ~ ~ ~ ICONES SETAS MENU CSS ~ ~ ~ */
+
+.cadastros .label-cadastro .seta-baixo-cadastro{
+    font-size: 20px;
+    position: absolute;
+    margin-left: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.cadastros .label-cadastro .seta-cima-cadastro{
+    font-size: 20px;
+    position: absolute;
+    margin-left: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.vendas .label-vendas .seta-baixo-venda{
+    font-size: 20px;
+    position: absolute;
+    margin-left: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.vendas .label-vendas .seta-cima-venda{
+    font-size: 20px;
+    position: absolute;
+    margin-left: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
 
 
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 
 @Component({
   selector: 'app-menu-side',
@@ -7,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuSideComponent implements OnInit {
 
+  subMenuCadastros:boolean = false;
+  subMenuVendas:boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  mudarEstadoMenuCadastros(){
+    this.subMenuCadastros = !this.subMenuCadastros
+    console.log(this.subMenuCadastros);
+  }
+
+  mudarEstadoMenuVendas(){
+    this.subMenuVendas = !this.subMenuVendas
+    console.log(this.subMenuVendas);
+  }
 }

@@ -11,7 +11,7 @@ import { ClienteService } from '../services/cliente.service';
 export class CadastroClienteComponent implements OnInit {
 
   cliente: Cliente = {
-    id: 0,
+    id: '',
     nome: '',
     email: '',
     apelido: '',

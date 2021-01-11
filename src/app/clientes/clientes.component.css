@@ -17,13 +17,12 @@ table {
     box-shadow: 1px 1px 3px 2px #808080;
 }
 .tabela-clientes th{
-    background-color: #2ecc71;
+    background-color: #27ae60;
     color: #ecf0f1;
     letter-spacing: 1px;
     padding: 10px;
     font-size: 15px;
     margin-left: 50px;
-    border-bottom: 2px solid black;
 }
 
 
