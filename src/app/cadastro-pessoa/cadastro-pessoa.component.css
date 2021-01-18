@@ -1,0 +1,172 @@
+.cadastro-pessoa-content{
+    border-radius: 5px;
+    background-color: #ececec;
+    width: 95%;
+    height: 95%;
+    display: inline-block;
+    box-shadow: 1px 1px 3px 2px #808080;
+}
+
+.cliente-content .forma-pagamento-content{
+    margin-left: 50px;
+}
+
+
+.cliente-content .forma-pagamento{
+    margin: 0;
+    display: block;
+}
+
+.div-apelido label{
+   display: inline-block;
+   width: 90px;
+}
+
+
+#apelido{
+    width: 90%;
+    margin:0;
+}
+
+div-razao-social label{
+    margin: 0;
+    display: inline-block;
+    width: 90px;
+}
+
+h1{
+    display: inline-block;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 40px;
+    color: #3a3a3a;
+}
+.div-apelido{
+    width: 100%;
+}
+
+.div-apelido input{
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.div-razao-social input{
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0;
+}
+
+.definicao-sistema{
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.definicao-sistema label{
+    margin-left: 5px;
+}
+
+.definicao-sistema #fornecedor{
+    margin-left: 20px;
+    
+    
+}
+
+h3{
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+
+.dados-especificos-cliente{
+    width: 50%;
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+
+.cliente-content label{
+  margin-left: 5px;
+}
+
+.cliente-content #forma-pagamento-prazo{
+    margin-left:10px;
+    margin-top: 10px;
+}
+
+.vencimento-boleto-content{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.vencimento-boleto-content label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin:0;
+}
+
+.vencimento-boleto-content #vencimento-boleto{
+    width: 120px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+.cadastro-pessoa{
+    margin-left: 50px;
+}
+
+.cadastro-pessoa .div-apelido{
+    display: block;
+    padding-bottom: 20px;
+}
+
+.dados-especificos-fornecedor{
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+
+.dados-especificos-fornecedor input{
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.grupo-content{
+    padding-bottom: 20px;
+}
+.grupo-content label{
+    margin: 0;
+    display: inline-block;
+    width: 90px;
+}
+
+.grupo-content input{
+    margin: 0;
+}
+.comissao-content label{
+    margin: 0;
+    display: inline-block;
+    width: 90px;
+}
+
+.comissao-content input{
+    margin:0;
+}
+
+button{
+    border: none;
+    color: white;
+    background-color: #2ecc71;
+    padding: 10px;
+    width: 120px;
+    border-radius: 5px;
+    cursor: pointer;
+}

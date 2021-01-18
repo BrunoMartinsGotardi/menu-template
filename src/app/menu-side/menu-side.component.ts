@@ -1,4 +1,4 @@
-import { Component, OnInit, } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-menu-side',
@@ -9,6 +9,8 @@ export class MenuSideComponent implements OnInit {
 
   subMenuCadastros:boolean = false;
   subMenuVendas:boolean = false;
+  
+  @Input() fixarMenu:boolean = false;
 
   constructor() { }
 
@@ -24,4 +26,9 @@ export class MenuSideComponent implements OnInit {
     this.subMenuVendas = !this.subMenuVendas
     console.log(this.subMenuVendas);
   }
+
+  fixarMenuAberto(){
+   this.fixarMenu = !this.fixarMenu
+  }
+
 }

@@ -1,6 +1,4 @@
-*{
-    margin-left: 50px;
-}
+
 
 table {
     border-spacing: 0;
@@ -11,26 +9,15 @@ table {
     margin:0
 }
 
-.tabela-clientes{
-    width: 95%;
-    background-color: #ececec;
-    box-shadow: 1px 1px 3px 2px #808080;
+tr th{
+    text-align: center;
 }
-.tabela-clientes th{
-    background-color: #27ae60;
-    color: #ecf0f1;
-    letter-spacing: 1px;
-    padding: 10px;
-    font-size: 15px;
-    margin-left: 50px;
-}
-
 
 .tabela-clientes td{
     color: #2c3e50;
     font-size: 15px;
     text-align: center;
-    padding: 15px;
+    font-size: 15px;
 }
 
 button{
@@ -51,7 +38,7 @@ button{
 
 .dados-tabela button{
     margin: 0;
-    margin-left: 10px;
+
     text-align: center;
 }
 

@@ -1,0 +1,93 @@
+
+  <div class="p-grid" style="background-color: #e2e8e996 ;border-radius: 10px;padding:15px;">
+    <div class="p-col-6">
+      <h3>Dados da pessoa</h3>
+      <p>Esses são os dados essenciais e em comum para todas as funções no sistema.</p>
+    </div>
+
+    <div class="p-col-6">
+      <p-card>
+        <div class="cadastro-pessoa">
+          <div class="div-apelido">
+            <label for="apelido">Apelido</label>
+            <input type="text" id="apelido">
+          </div>
+          <div class="div-razao-social">
+            <label for="razao-social">Razão Social</label>
+            <input type="text" id="razao-social">
+          </div>
+        </div>
+        <div class="definicao-sistema">
+          <h3 class="definicao-sistema-h3">Definição Sistema</h3>
+          <input type="checkbox" id="cliente" (click)="mostrarEsconderCliente()">
+          <label for="cliente">Cliente</label>
+          <input type="checkbox" id="fornecedor" (click)="mostrarEsconderFornecedor()">
+          <label for="fornecedor">Fornecedor</label>
+        </div>
+      </p-card>
+    </div>
+
+        <ng-template [ngIf]="cliente">
+
+          <div class="p-col-12">
+            <p-divider></p-divider>
+          </div>
+
+          <div class="p-col-6">
+            <h3 class="dados-especificos-cliente-h3">Dados Específicos Cliente</h3>
+            <p>Esses são os dados que devem ser preenchidos para as operações relacionadas a clientes.</p>
+          </div>
+
+          <div class="p-col-6 cliente-content">
+            <p-card>
+              <div class="forma-pagamento-content">
+                <label class="forma-pagamento">Forma de pagamento</label>
+                <input #inputVista type="checkbox" id="forma-pagamento-dias" (click)="verificarInputVista()">
+                <label for="forma-pagamento-dias">Vista</label>
+
+                <input #inputPrazo type="checkbox" id="forma-pagamento-prazo" (click)="verificarInputPrazo()">
+                <label for="forma-pagamento-prazo">Prazo</label>
+            </div>
+            <div class="vencimento-boleto-content">
+
+              <label for="vencimento-boleto">Vencimento Boleto : </label>
+              <input type="text" id="vencimento-boleto" placeholder="Dias">
+            </div>
+          </p-card>
+          </div>
+        </ng-template>
+
+     
+    
+    <ng-template [ngIf]="fornecedor">
+      <div class="p-col-12">
+        <p-divider></p-divider>
+      </div>
+      
+      <div class="p-col-6">
+        <h3>Dados Específicos Fornecedor</h3>
+        <p>Esses são os dados que devem ser preenchidos para as operações relacionadas a fornecedores.</p>
+      </div>
+      <div class="p-col-6">
+        <p-card>
+          <div class="dados-especificos-fornecedor">
+            <h3 class="dados-especificos-fornecedor-h3"></h3>
+            <div class="grupo-content">
+              <label for="grupo">Grupo</label>
+              <input type="text" id="grupo">
+            </div>
+
+            <div class="comissao-content">
+              <label for="comissao">Comissão</label>
+              <input type="text" id="comissao">
+            </div>
+          </div>
+        </p-card>
+      </div>
+    </ng-template>
+    <div class="p-col-6">
+      <button class="button-cadastro" style="display: block;">Salvar</button>
+    </div>
+  </div>
+  
+

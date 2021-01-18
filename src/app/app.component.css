@@ -1,0 +1,8 @@
+.div-principal{
+    width: calc(100% - 40px);
+    margin-left:40px; 
+    padding:20px;
+}
+.conteudo-reduzido{
+    width: calc(100% - 280px);
+}

@@ -7,6 +7,7 @@ nav{
     height: 100vh;
     transition: .5s;
     z-index: 1;
+
 }
 
 nav a {
@@ -22,12 +23,17 @@ nav .titulo {
     border-bottom: 1px solid white;
 }
 
+nav .titulo .link-visivel{
+   opacity: 1;
+}
+
 nav .titulo a {
     position: fixed;
-    display: none;
+    opacity: 0;
     margin-left: 15px;
     font-size: 20px;
 }
+
 
 nav .cadastros label{
     font-size: 20px;
@@ -38,6 +44,10 @@ nav .cadastros label{
     cursor: pointer;
 }
 
+nav .cadastros .label-cadstros-visivel{
+    opacity: 1;
+}
+
 nav .vendas label{
     position: absolute;
     opacity: 0;
@@ -45,6 +55,10 @@ nav .vendas label{
     margin-left: 15px;
     cursor: pointer;
     font-size: 20px;
+}
+
+nav .vendas .label-vendas-visivel{
+    opacity: 1;
 }
 
 nav i{
@@ -78,6 +92,9 @@ nav i{
 .subitem-cadastros{
   display: none;
 }
+.subitem-cadastros-visivel{
+    display: block;
+}
 
 .subitem-cadastros li{
     padding: 20px;
@@ -103,6 +120,9 @@ nav i{
 
 .subitem-vendas{
     display: none;
+}
+.subitem-vendas-visivel{
+    display: block;
 }
 
 .subitem-vendas li{
@@ -136,8 +156,9 @@ nav:hover .subMenu-close{
 }
 
 nav:hover .titulo a{
-    display: inline-block;
-    transition: 1s;
+    opacity: 1;
+    transition: .5s;
+    pointer-events: all;
 }
 
 nav:hover .cadastros label{
@@ -176,7 +197,6 @@ nav:hover .subitem-cadastros{
 }
 
 nav label:hover{
-    color: #95a5a6 ;
     transition: .5s;
 
 }
@@ -231,6 +251,59 @@ nav label:hover{
     display: inline-block;
 }
 
+nav .seta-menu-direita{
+    color: white;
+    padding-bottom: 15px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid white;
+    width: 100%;
+    margin:0;
+    padding-left: 10px;
+    padding-top: 10px;
+}
 
 
+nav .seta-menu-esquerda{
+    color: white;
+    padding-bottom: 15px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid white;
+    width: 100%;
+    margin:0;
+    padding-left: 10px;
+    padding-top: 10px;
+}
 
+.seta-menu-esquerda-invisivel{
+    display: none;
+}
+
+.seta-menu-direita-invisivel{
+    display: none;
+}
+
+.menu-fixo {
+    width: 280px;
+}
+
+.label-menu-fixo{
+    opacity: 1;
+}
+
+.div-principal{
+    width: calc(100% - 40px);
+    margin-left:40px; 
+    padding:20px;
+    transition: .5s;
+}
+
+.div-principal-responsiva{
+    width: calc(100% - 300px);
+    margin-left: 300px; 
+    padding:20px;
+    transition: .5s;
+}
