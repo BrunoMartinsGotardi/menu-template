@@ -22,6 +22,7 @@ import { FirebaseService } from './services/firebase.service';
 import {InputTextModule} from 'primeng/inputtext';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +34,7 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     NotFoundComponent,
     HomeComponent,
+    FooterComponent,
 
   ],
   imports: [

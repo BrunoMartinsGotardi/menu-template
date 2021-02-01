@@ -1,5 +1,5 @@
 
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FirebaseService } from '../services/firebase.service';
 
@@ -11,7 +11,7 @@ import { FirebaseService } from '../services/firebase.service';
 })
 export class LoginComponent implements OnInit {
 
-  email: string = "";
+  @Input() email: string = "";
   senha: string = "";
   organizacao: string = "";
 
@@ -36,6 +36,7 @@ export class LoginComponent implements OnInit {
         if(res && res.uid) {
           console.log(res)
           this.router.navigate([''])
+          console.log(this.email)
         }
       })
     }).catch(err => alert(err))

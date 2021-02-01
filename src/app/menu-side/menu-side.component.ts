@@ -14,6 +14,7 @@ export class MenuSideComponent implements OnInit {
 
   constructor() { }
 
+
   ngOnInit(): void {
   }
 
@@ -30,5 +31,6 @@ export class MenuSideComponent implements OnInit {
   fixarMenuAberto(){
    this.fixarMenu = !this.fixarMenu
   }
+
 
 }

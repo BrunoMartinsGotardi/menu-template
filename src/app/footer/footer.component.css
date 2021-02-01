@@ -1,0 +1,28 @@
+footer{
+    position: fixed;
+    width: 100%;
+    padding-top: 15px;
+    bottom: 0;
+    background-color: #f27649;
+    text-align: right;
+
+    
+}
+
+.footer-content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-right: 30px;
+}
+
+.footer-content_span{
+    margin-right: 10px;
+    color: white;
+}
+.footer-content_deslogar{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
