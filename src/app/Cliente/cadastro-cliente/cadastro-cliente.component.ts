@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Cliente } from '../models/cliente.model';
-import { ClienteService } from '../services/cliente.service';
+import { ClienteStorageService } from 'src/app/services/storage/cliente.storage.service';
+import { Cliente } from '../../models/cliente.model';
+import { ClienteService } from '../../services/cliente.service';
 
 @Component({
   selector: 'app-cadastro-cliente',
@@ -19,7 +20,7 @@ export class CadastroClienteComponent implements OnInit {
     anoNascimento: ''
   }
 
-  constructor(private router: Router, private clienteService: ClienteService) { }
+  constructor(private router: Router, private clienteService: ClienteStorageService) { }
 
   ngOnInit(): void {
   }
@@ -29,7 +30,7 @@ export class CadastroClienteComponent implements OnInit {
   }
 
   cadastrarCliente(){
-    this.clienteService.cadastrarCliente(this.cliente).subscribe(()=>{
+    this.clienteService.saveCliente(this.cliente).subscribe(()=>{
       alert("Cliente Cadastrado com sucesso");
       this.voltarParaClientes();
     })

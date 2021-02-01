@@ -2,7 +2,7 @@
 /* ~ ~ ~ NAV CSS ~ ~ ~ */
 nav{
     position: fixed;
-    background-color: #1abc9c;
+    background-color: #f7ad92;
     width: 40px;
     height: 100vh;
     transition: .5s;
@@ -18,7 +18,7 @@ nav a {
 nav .titulo {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #16a085;
+    background-color: #f27649;
     color: white;
     border-bottom: 1px solid white;
 }
@@ -187,12 +187,12 @@ nav:hover .subitem-cadastros{
 }
 
 .subitem-cadastros li:hover{
-    background-color: #16a085;
+    background-color: #f27649;
     transition: 1s;
 }
 
 .vendas li:hover{
-    background-color: #16a085;
+    background-color: #f27649;
     transition: 1s;
 }
 
@@ -251,10 +251,13 @@ nav label:hover{
     display: inline-block;
 }
 
-nav .seta-menu-direita{
+
+/* ~ ~ ~ SETAS DIREITA E EESQUERDA PARA TRAVAR E DESTRAVAR MENU CSS ~ ~ ~ */
+
+nav .cadeado-trancado{
     color: white;
     padding-bottom: 15px;
-    font-size: 20px;
+    font-size: 25px;
     position: absolute;
     bottom: 0;
     border-top: 1px solid white;
@@ -262,13 +265,14 @@ nav .seta-menu-direita{
     margin:0;
     padding-left: 10px;
     padding-top: 10px;
+    cursor: pointer;
 }
 
 
-nav .seta-menu-esquerda{
+nav .cadeado-destrancado{
     color: white;
     padding-bottom: 15px;
-    font-size: 20px;
+    font-size: 25px;
     position: absolute;
     bottom: 0;
     border-top: 1px solid white;
@@ -276,13 +280,14 @@ nav .seta-menu-esquerda{
     margin:0;
     padding-left: 10px;
     padding-top: 10px;
+    cursor: pointer;
 }
 
-.seta-menu-esquerda-invisivel{
+.cadeado-destrancado-invisivel{
     display: none;
 }
 
-.seta-menu-direita-invisivel{
+.cadeado-trancado-invisivel{
     display: none;
 }
 
@@ -294,6 +299,8 @@ nav .seta-menu-esquerda{
     opacity: 1;
 }
 
+/* ~ ~ ~ DIV PRINCIPAL COM ROUTER-OUTLET CSS ~ ~ ~ */
+
 .div-principal{
     width: calc(100% - 40px);
     margin-left:40px; 
@@ -303,7 +310,7 @@ nav .seta-menu-esquerda{
 
 .div-principal-responsiva{
     width: calc(100% - 300px);
-    margin-left: 300px; 
+    margin-left: 290px; 
     padding:20px;
     transition: .5s;
 }

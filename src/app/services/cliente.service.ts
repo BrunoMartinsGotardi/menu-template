@@ -2,16 +2,35 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Cliente } from '../models/cliente.model';
+import { ClienteServiceInterface } from './interfaces/cliente.service.interface';
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class ClienteService {
-
+export class ClienteService implements ClienteServiceInterface {
+  
   clientesUrl = "http://localhost:3000/clientes"
 
   constructor(private httpClient: HttpClient) { }
+
+  getCliente(id: Number): Observable<Cliente> {
+    throw new Error('Method not implemented.');
+  }
+  getClientes(): Observable<Cliente> {
+    throw new Error('Method not implemented.');
+  }
+  
+  saveCliente(cliente: Cliente): Observable<Cliente> {
+    return this.httpClient.post<Cliente>(this.clientesUrl, cliente);
+  }
+  
+  updateCliente(cliente: Cliente): Observable<Cliente> {
+    throw new Error('Method not implemented.');
+  }
+  deleteCliente(id: Number): Observable<Cliente> {
+    throw new Error('Method not implemented.');
+  }
 
   listarClientes(){
     return this.httpClient.get(this.clientesUrl)

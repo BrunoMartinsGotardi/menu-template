@@ -1,0 +1,36 @@
+   <div class="ctn-login">
+     <p-card>
+       <div class="card-login">
+         <div class="header_login">
+           <img class="header_login-img" src="../../assets/nbm.logo.png">
+         </div>
+
+         <div class="ctn-campos-login">
+           <div class="campo-login">
+             <span class="p-float-label">
+               <input id="usuario_login-input" type="text" [(ngModel)]="email" pInputText>
+               <label for="usuario_login-input">Usuário</label>
+             </span>
+           </div>
+
+           <div class="campo-login">
+             <span class="p-float-label">
+               <input id="usuario_senha-input" type="text" #senhaEntrar  [(ngModel)]="senha" pInputText>
+               <label for="usuario_senha-input">Senha</label>
+             </span>
+           </div>
+
+           <div class="campo-login">
+             <span class="p-float-label">
+               <input id="usuario_organizacao-input" type="text"  [(ngModel)]="organizacao" pInputText>
+               <label for="usuario_organizacao-input">Organização</label>
+             </span>
+           </div>
+         </div>
+         <button (click)="logar()">Entrar</button>
+
+       </div>
+
+       <p>Não possui conta ? <a href="#">Cadastre-se</a></p>
+     </p-card>
+   </div>

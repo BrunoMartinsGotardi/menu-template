@@ -1,0 +1,32 @@
+.not-found-content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.not-found-content_404{
+    font-size: 120px;
+
+}
+
+.not-found-content_h1 {
+    font-size: 30px;
+}
+
+.not-found-content_img{
+    width: 200px;
+}
+
+
+.not-found-content_button{
+    margin-top: 35px;
+    border: none;
+    color: white;
+    background-color: #f27649;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}

@@ -47,14 +47,14 @@
         </li>
     </ul>
 
-    <i  class="fa fa-arrow-right seta-menu-direita"
-        [class.seta-menu-direita-invisivel]="fixarMenu"
+    <i  class="fa fa-lock cadeado-trancado" aria-hidden="true"
+        [class.cadeado-trancado-invisivel]="fixarMenu"
         aria-hidden="true" 
         (click)="fixarMenuAberto()"
     ></i>
 
-     <i class="fa fa-arrow-left seta-menu-esquerda"
-        [class.seta-menu-esquerda-invisivel]="!fixarMenu"
+     <i class="fa fa-unlock-alt cadeado-destrancado" aria-hidden="true"
+        [class.cadeado-destrancado-invisivel]="!fixarMenu"
         aria-hidden="true"
         (click)="fixarMenuAberto()"
       ></i>
